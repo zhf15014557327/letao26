@@ -1,0 +1,223 @@
+@import "baes.less";
+
+// 轮播图
+#slideshow{
+    width: 100vw;
+    .mui-slider{
+        .mui-slider-group{
+            .mui-slider-item{
+                a{
+                    display: block;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// 导航栏
+#nav{
+    padding: .1rem ;
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        width: 33.33%;
+        img{
+            width: 100%;
+        }
+    }
+}
+// 广告
+#banner{
+    padding: 0 .1rem;
+    display: flex;
+    .banner-left{
+              flex: 2;
+              display: flex;
+              flex-wrap: wrap;
+            
+             a.top{
+                 display: flex;
+               
+                img{
+                    width: 50%;
+                    height: 100%;
+                }
+
+             }
+             a.btm{
+                display: flex;
+               
+                img{
+                    height: 100%;
+                    width: 50%;
+                }
+             }
+    }
+    .banner-right{
+            flex: 1;
+        a{  
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+#brand{
+    max-resolution: .1rem;
+    padding: .1rem ;
+    .title{
+        // height: .57125rem;
+       
+        width: 100%;
+        a{
+            display: block;
+            img{
+               width: 100%;
+            }
+        }
+    }
+    .conten{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+           width: 25%; 
+           img{
+               width: 100%;
+           }
+        }
+    }
+}
+// 运动生活专区
+#sport{
+    max-resolution: .1rem;
+    background-color: #fff;
+    padding: .1rem ;
+    .title{
+        // height: .57125rem;
+        width: 100%;
+        a{
+            display: block;
+            img{
+               width: 100%;
+            //    height: 100%;
+            }
+        }
+    }
+    .conten{
+        margin-top: .1rem;
+        display: flex;
+        a{
+            box-shadow: 0 0 2px skyblue;
+            width: 50%;
+            display: block;
+            img{
+                width: 100%;
+            }
+            
+        }
+        p{
+            text-align: center;
+            >span{
+                color:red; 
+            }
+        }
+    }
+}
+// 女士专场
+#women{
+    margin-top: .1rem;
+    // background-color: pink;
+  
+    padding: .1rem ;
+    .title{
+        // height: .57125rem;
+        width: 100%;
+        a{
+            display: block;
+            img{
+               width: 100%;
+            //    height: 100%;
+            }
+        }
+    }
+    .conten{
+        margin-top: .1rem;
+        display: flex;
+        a{
+            box-shadow: 0 0 2px skyblue;
+            width: 50%;
+            display: block;
+            img{
+                width: 100%;
+            }
+            
+        }
+        p{
+            text-align: center;
+            >span{
+                color:red; 
+            }
+        }
+    }
+}
+// 男士专场
+#man{
+        margin-top: .1rem;
+//    background-color: palegreen;
+    padding: .1rem ;
+    .title{
+        // height: .57125rem;
+        width: 100%;
+        a{
+            display: block;
+            img{
+               width: 100%;
+            //    height: 100%;
+            }
+        }
+    }
+    .conten{
+        margin-top: .1rem;
+        display: flex;
+        a{
+            box-shadow: 0 0 2px skyblue;
+            width: 50%;
+            display: block;
+            img{
+                width: 100%;
+            }
+            
+        }
+        p{
+            text-align: center;
+            >span{
+                color:red; 
+            }
+        }
+    }
+}
+// 底部
+#footer{ 
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color:@main-color;
+    display: flex;
+    a{   padding: 0.03rem; 
+        // color:#fff;
+        width: 25%;
+        text-align: center;
+        i{
+            color:#fff;
+        }
+        p{
+            margin: 0;
+            color:#fff;
+        }
+    }
+}
