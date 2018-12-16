@@ -30,19 +30,12 @@ window.addEventListener('load',function(){
                document.documentElement.style.fontSize = nowFontSize +'px';
            }
            getHtmlFontsize();
-           window.addEventListener('resize',getHtmlFontsize)
-
-// 轮播图初始化
-var gallery = mui('.mui-slider');
-gallery.slider({
-  interval:3000//自动轮播周期，若为0则不自动播放，默认为0；
- })
-//  区域滚动
-mui('.mui-scroll-wrapper').scroll({
-    deceleration: 0.0005,//flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-    bounce: true, //是否启用回弹
-    scrollY: true, //是否竖向滚动
-    indicators: true //是否显示滚动条
-});
-// mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);//100毫秒滚动到顶
+           window.addEventListener('resize',getHtmlFontsize);
+           mui('.mui-scroll-wrapper').scroll({
+            deceleration: 0.0005,//flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+            bounce: true, //是否启用回弹
+            scrollY: true, //是否竖向滚动
+            indicators: false //是否显示滚动条
+        });
+        // mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);//100毫秒滚动到顶
 })

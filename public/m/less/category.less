@@ -1,0 +1,66 @@
+@import "baes.less";
+// 分类页面
+
+#main{
+display: flex;
+background-color: #ccc;
+// 左侧
+    .shangping-left{
+        width:.8rem;
+        position: relative;
+        .mui-scroll-wrapper{
+            position: absolute;
+            top: 0;
+           
+            .mui-scroll{
+                min-height: 101%;
+                a{ 
+                    height: .45rem;
+                   color:  #000;
+                    display: block;
+                    text-align: center;
+                    line-height: .45rem;
+                    background-color: #fff;
+                    border-bottom: 1px solid #000;
+                    &.active{
+                        color: @main-color;
+                        background-color:#cccccc;
+                        
+                    }
+                }
+            }
+        }
+    }
+    // 右侧
+    .shangping-right{
+        width: 2.9rem;
+       
+        position: relative;
+        .mui-scroll-wrapper{
+            // width: 2.9rem;
+            position: absolute;
+            top: 0;
+            .mui-scroll{
+               
+                padding: .1rem;
+               min-height: 101%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            a{
+                height: .682rem;
+            text-align: center;
+            width: 33.33%;
+            // height:.682rem ;
+            background-color: #fff;
+            margin-bottom: .1rem;
+            img{
+                width: 100%;
+            }
+            
+        }
+
+    }
+}
+    }
+}

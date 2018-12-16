@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页</title>
+    <script src="./js/rem.js"></script>
+    <!-- 引入miui的 css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体库css -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己的less文件 -->
+    <link rel="stylesheet/less" href="./less/category.less">
+    <!-- 引入解析less的js文件 -->
+    <script src="./lib/less/less.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="javascript:history.back(); " class="fa fa-arrow-left"></a>
+        <form action="">
+            <input type="search" name="" id="" placeholder="请输入要搜索的商品">
+        </form>
+        <a href="search.html" class="fa fa-search"></a>
+
+    </header>
+    <!-- 主体 -->
+    <main id="main">
+        <!-- 分类左侧 -->
+        <section class="shangping-left">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <a href="#" class="active">运动馆</a>
+                    <a href="#">女士馆</a>
+                    <a href="#">男士馆</a>
+                    <a href="#">男士馆</a>
+                    <a href="#">男士馆</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- 分类右侧 -->
+        <section class="shangping-right">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- 底部 -->
+    <footer id="footer">
+        <a href="index.html">
+            <i class="fa fa-home"></i>
+            <p>首页</p>
+        </a>
+        <a href="category.html" class="active">
+            <i class="fa fa-bars"></i>
+            <p>分类</p>
+        </a>
+        <a href="cart.html">
+            <i class="fa fa-shopping-cart"></i>
+            <p>购物车</p>
+        </a>
+        <a href="user.html">
+            <i class="fa fa-user"></i>
+            <p>会员中心</p>
+        </a>
+    </footer>
+    <!-- 创建左侧模板 -->
+    <script id="categoryLeftTpl" type="text/html">
+        {{each rows value index}}
+    <a href="#" class="{{index==0 ? 'active' : ''}}" data-id="{{value.id}}">{{value.categoryName}}</a>
+    {{/each}}
+    </script>
+    <!-- 创建右侧模板 -->
+    <script id="categoryrightTpl" type="text/html">
+    {{if rows.length >0}}
+    {{each rows value}}
+        <a href="#">
+            <img src="{{value.brandLogo}}" alt="">
+            <p>{{value.brandName}}</p>
+        </a>
+    {{/each}}
+    {{else}}
+    <p style="color:#fff;">暂无此商品数据</p>
+    {{/if}}
+    </script>
+    <!-- 模板引擎 -->
+    <script src="./lib//artTemplate/template-web.js"></script>
+    <!-- mui 的js -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- zepto的js -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 自己的js -->
+    <script src="./js/category.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@import "baes.less";
+// 导航
+#nav{
+    display: flex;
+    >a{  
+        color: #000000;
+        font-size: .14rem;
+        height: .3rem;
+        line-height: .3rem;
+        text-align: center;
+        width: 25%;
+        background-color: #eeeeee;
+       &.active{
+           color: red;
+       }
+    }
+}
+// 主体的区域划动
+#main{
+    display: flex;
+    // 左侧
+        .shangping-left{
+            width:100%;
+            position: relative;
+            .mui-scroll-wrapper{
+                position: absolute;
+                top: 0;
+               
+                .mui-scroll{
+                    min-height: 101%;
+                }
+            }
+        }
+    }
+
+
+    #sport{
+        .producs{
+            width: 3.55rem;
+            display: flex;
+            flex-wrap: wrap;
+            a{
+             
+                width: 1.775rem;
+    
+            }
+        }
+    }
+   

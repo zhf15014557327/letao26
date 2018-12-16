@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页</title>
+    <script src="./js/rem.js"></script>
+    <!-- 引入miui的 css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体库css -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己的less文件 -->
+    <link rel="stylesheet/less" href="./less/search.less">
+    <!-- 引入解析less的js文件 -->
+    <script src="./lib/less/less.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <a href="javascript:history.back(); " class="fa fa-arrow-left"></a>
+        <h4>搜索中心</h4>
+        <a href="#"></a>
+    </header>
+    <!-- 主体 -->
+    <main id="main">
+        <!-- 商品搜索 -->
+        <section class="search">
+            <input type="search" class="shangping-search" placeholder="请输入要搜索的商品">
+            <button type="button" class="mui-btn mui-btn-primary dtn">搜索</button>
+        </section>
+        <!-- 历史记录标题 -->
+        <div class="mui-card history-title">
+            <!--页眉，放置标题-->
+            <div class="mui-card-header">
+                <span>搜索历史记录</span>
+                <a href="#" class="fa fa-trash">清空记录</a>
+            </div>
+            <!--内容区-->
+            <div class="mui-card-content history-conter">
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell">
+                        男鞋
+                        <span class="mui-badge mui-badge-primary fa fa-close"></span>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        女鞋
+                        <span class="mui-badge mui-badge-primary fa fa-close"></span>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        同鞋
+                        <span class="mui-badge mui-badge-primary fa fa-close"></span>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        皮鞋
+                        <span class="mui-badge mui-badge-primary fa fa-close"></span>
+                    </li>
+              
+                </ul>
+            </div>
+
+
+            </section>
+    </main>
+    <!-- 底部 -->
+    <footer id="footer">
+        <a href="index.html">
+            <i class="fa fa-home"></i>
+            <p>首页</p>
+        </a>
+        <a href="category.html" class="active">
+            <i class="fa fa-bars"></i>
+            <p>分类</p>
+        </a>
+        <a href="cart.html">
+            <i class="fa fa-shopping-cart"></i>
+            <p>购物车</p>
+        </a>
+        <a href="user.html">
+            <i class="fa fa-user"></i>
+            <p>会员中心</p>
+        </a>
+    </footer>
+    <script id="serachListtpl" type="text/html">
+        {{if list.length > 0}}
+    {{each list value index}}
+    <li class="mui-table-view-cell">
+
+        {{value}}
+        <span class="mui-badge mui-badge-primary fa fa-close" data-id="{{index}}" ></span>
+    </li>
+    {{/each}}
+    {{else}}
+    <p> 没有历史记录</p>
+    {{/if}}
+    </script>
+    <!-- 模板引擎 -->
+    <script src="./lib//artTemplate/template-web.js"></script>
+    <!-- mui 的js -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- zepto的js -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 自己的js -->
+    <script src="./js/search.js"></script>
+</body>
+</body>
+
+</html>
