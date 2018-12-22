@@ -54,5 +54,13 @@ $(function(){
     localStorage.removeItem("serachHistory");
     getrecord();
   })
-
+// // 给每个历史记录添加点击事件
+//   $('.history-conter ul').on('tap','li',function(){
+//         // 获取被点击的内容
+//             var text= $(this).text();
+//     //    alert(text);
+//     // 把被点击的内容加到表单里面
+//             $('#main .shangping-search').val(text);
+//             getrecord();
+//   })
 })

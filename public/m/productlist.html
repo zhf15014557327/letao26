@@ -27,7 +27,7 @@
     </header>
     <!-- 主体 -->
     <main id="main">
-        <div class="mui-scroll-wrapper">
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
             <div class="mui-scroll">
                 <!-- 商品搜索 -->
                 <section class="search">
@@ -42,7 +42,7 @@
                 </section>
                 <section id="sport">
                     <div class="producs">
-                        <a href="#">
+                        <a href="###">
                             <img src="images/product.jpg" alt="" srcset="">
                             <p>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
                             <p>
@@ -54,7 +54,7 @@
                             </p>
                         </a>
 
-                        <a href="#">
+                        <a href="###">
                             <img src="images/product.jpg" alt="" srcset="">
                             <p>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
                             <p>
@@ -66,7 +66,7 @@
                             </p>
                         </a>
 
-                        <a href="#">
+                        <a href="###">
                             <img src="images/product.jpg" alt="" srcset="">
                             <p>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
                             <p>
@@ -78,7 +78,7 @@
                             </p>
                         </a>
 
-                        <a href="#">
+                        <a href="###">
                             <img src="images/product.jpg" alt="" srcset="">
                             <p>adidas阿迪达斯 男式 场下休闲篮球鞋S83700</p>
                             <p>
@@ -104,7 +104,7 @@
             <p>首页</p>
         </a>
 
-        <a href="category.html" class="active">
+        <a href="category.html" class="">
             <i class="fa fa-bars"></i>
             <p>分类</p>
         </a>
@@ -116,13 +116,20 @@
 
         <a href="user.html">
             <i class="fa fa-user"></i>
-            <p>会员中心</p>
+            <p>个人中心</p>
         </a>
     </footer>
+    
+        <div class="mask">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
 
     <script id='productlisttpl' type="text/html">
     {{each data value}}
-        <a href="#">
+        <a href="###" >
             <img src="images/product.jpg" alt="" srcset="">
             <p>{{value.proName}}</p>
             <p>
@@ -130,7 +137,7 @@
                 <del>¥{{value.oldPrice}}</del>
             </p>
             <p>
-                <button class="mui-btn mui-btn-primary product-buy">立即购买{{value.num}}</button>
+                <button class="mui-btn mui-btn-primary product-buy" data-id="{{value.id}}">立即购买{{value.num}}</button>
             </p>
         </a>
     

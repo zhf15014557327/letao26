@@ -1,0 +1,90 @@
+@import "baes.less";
+
+#footer{
+    display: flex;
+    background-color: #ccc;
+    a{
+        padding: .05rem;
+        flex: 1;
+        button{
+          
+            width: 100%;
+            height: 100%;
+        }
+    }
+    a:first-child{
+        i{
+            font-size: .2rem;
+            color: #666666
+        }
+        padding: .13rem;
+        flex: none;
+        width: .8rem;
+     }
+}
+
+#slideshow{
+    width: 100vw;
+    .mui-slider{
+        .mui-slider-group{
+            .mui-slider-item{
+                a{ 
+                    width: 4.14rem;
+                    display: block;
+                    img{
+                        width: 100%;
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// white-space: normal;
+// 商品详情
+#product-details{
+    ul{
+        li{
+           span.product-name{
+               font-size: .16rem;
+            //    font-weight: 6rem;加粗为嘛没效果
+           }
+           .new-price{
+               font-size: .2rem;
+            //    font-weight: 6rem;
+               color: red;
+               padding: .05rem;
+           }
+           .old-price{
+            color: #ccc;
+           }
+        
+           .btn-size{
+               margin-bottom: .05rem;
+               &:nth-child(1){
+                   border: none;
+               }
+               &.active{
+                   background-color:gold;
+               }
+           }
+        }
+    }
+
+}
+
+#main{
+    display: flex;
+    // 左侧
+            width:100%;
+            position: relative;
+            .mui-scroll-wrapper{
+                position: absolute;
+                top: 0;
+               
+                .mui-scroll{
+                    min-height: 101%;
+                }
+            
+        }
+    }

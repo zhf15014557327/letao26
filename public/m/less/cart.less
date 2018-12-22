@@ -1,0 +1,91 @@
+@import 'baes.less';
+body{
+     padding-top: 0px;
+    padding-bottom: .75rem;
+}
+
+#main{
+   position: relative;
+  .mui-media{
+      .mui-pull-left{
+          input{
+              position: static;
+              display: block;
+              margin: 0 auto;
+              &::before{
+                  color: aqua;
+              }
+          }
+          .mui-media-object{
+             height: 1rem;
+              max-width: 1rem;
+          }
+      }
+  }
+
+  .mui-media-body{
+      padding: .1rem;
+      .product-name{
+        white-space: normal;
+        line-height: .3rem;
+      }
+      .product-price{
+          margin-bottom: .16rem;
+        .new-price{
+            color: red;
+            font-weight: 600;
+        }
+        .old-price{
+            color: #666666;
+        }
+      }
+      .product{
+            .product-size{
+                float: left;
+
+            }
+            .product-num{
+                float: right;
+            }
+      }
+  }
+}
+#total{
+    width: 100%;
+    position: fixed;
+    bottom: 45px;
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    .mui-pull-left{
+        padding-left: .1rem;
+        height: .3rem;
+        line-height: .3rem;
+        color: red;
+    }
+
+}
+
+li.btn{
+    padding: 0.11rem 0rem;
+    .btn-size{
+        margin-bottom: .05rem;
+        &:nth-child(1){
+            border: none;
+        }
+        &.active{
+            background-color:gold;
+        }
+    }
+}
+.mask{
+    img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 50%;
+         top: 50%;
+         transform: translate(-50%,-50%);
+    }
+}

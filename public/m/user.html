@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>会员中心</title>
+    <title>自写的个人中心</title>
+    <!-- 引入remjs文件 -->
+    <script src="./js/rem.js"></script>
+    <!-- 引入miui的 css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体库css -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己的less文件 -->
+    <link rel="stylesheet/less" href="./less/user.less">
+    <!-- 引入解析less的js文件 -->
+    <script src="./lib/less/less.js"></script>
+
 </head>
+
 <body>
-    
+    <!-- 头部 -->
+    <header id="header">
+        <a href="javascript:history.back(); " class="fa fa-arrow-left"></a>
+        <h4>个人中心</h4>
+        <a href="index.html" class="fa fa-home"></a>
+
+    </header>
+    <!-- 主体 -->
+    <main id="main">
+
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;" class="mui-navigate-right">
+                    <img class="mui-media-object mui-pull-left" src="images/user.jpg">
+                    <div class="mui-media-body">
+                        用户名<span class="userName">itcast</span>
+                        <p class='mui-ellipsis'>绑定手机 <span class="moblie">15102324243</span></p>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">账号与安全</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a  class="mui-navigate-right" href="cart.html">我的购物车</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right">收货地址管理</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <button type="button" class="btn-loginout">退出登录</button>
+            </li>
+        </ul>
+
+    </main>
+    <!-- 底部 -->
+    <footer id="footer">
+        <a href="index.html">
+            <i class="fa fa-home"></i>
+            <p>首页</p>
+        </a>
+        <a href="category.html">
+            <i class="fa fa-bars"></i>
+            <p>分类</p>
+        </a>
+        <a href="cart.html">
+            <i class="fa fa-shopping-cart"></i>
+            <p>购物车</p>
+        </a>
+        <a href="user.html" class="active">
+            <i class="fa fa-user"></i>
+            <p>个人中心</p>
+        </a>
+    </footer>
+    <!-- 模板引擎 -->
+    <script src="./lib//artTemplate/template-web.js"></script>
+    <!-- mui 的js -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- zepto的js -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 自己的js -->
+    <script src="./js/user.js"></script>
 </body>
+
 </html>

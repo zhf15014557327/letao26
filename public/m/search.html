@@ -43,19 +43,19 @@
             <div class="mui-card-content history-conter">
                 <ul class="mui-table-view">
                     <li class="mui-table-view-cell">
-                        男鞋
+                       <i>男鞋</i> 
                         <span class="mui-badge mui-badge-primary fa fa-close"></span>
                     </li>
                     <li class="mui-table-view-cell">
-                        女鞋
+                            <i>男鞋</i> 
                         <span class="mui-badge mui-badge-primary fa fa-close"></span>
                     </li>
                     <li class="mui-table-view-cell">
-                        同鞋
+                            <i>男鞋</i> 
                         <span class="mui-badge mui-badge-primary fa fa-close"></span>
                     </li>
                     <li class="mui-table-view-cell">
-                        皮鞋
+                            <i>男鞋</i> 
                         <span class="mui-badge mui-badge-primary fa fa-close"></span>
                     </li>
               
@@ -89,12 +89,14 @@
     {{each list value index}}
     <li class="mui-table-view-cell">
 
-        {{value}}
+         {{value}} 
         <span class="mui-badge mui-badge-primary fa fa-close" data-id="{{index}}" ></span>
     </li>
     {{/each}}
     {{else}}
-    <p> 没有历史记录</p>
+    <li class="mui-table-view-cell">
+        没有历史记录
+    </li>
     {{/if}}
     </script>
     <!-- 模板引擎 -->
